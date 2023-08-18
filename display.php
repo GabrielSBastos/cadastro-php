@@ -10,14 +10,13 @@
 </head>
 
 <body>
-  <div class="container" >
+  <div class="container">
     <button onclick="AddUser()" class="btn btn-secondary my-5 class=text-light">Add user </button>
     <table class="table">
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th
-           <th scope="col">Name</th>
+          <th scope="col">Name</th>
           <th scope="col">Email</th>
           <th scope="col">City</th>
           <th scope="col">Country</th>
@@ -44,7 +43,10 @@
             <td>' . $email . '</td>
             <td>' . $city . '</td>
             <td>' . $country . '</td>
-          </tr>';
+            <td>
+            <button type="button" class="btn btn-primary">Primary</button>
+            </td>
+            </tr>';
 
           }
         }
@@ -55,12 +57,12 @@
       </tbody>
     </table>
   </div>
-<script>
-  function AddUser(){
-    window.location.href = "index.php"
-  }
-</script>
-  
+  <script>
+    function AddUser() {
+      window.location.href = "index.php"
+    }
+  </script>
+
 </body>
 
 </html>
